@@ -1,3 +1,44 @@
 body {
   cursor: url("img/cursor.png"), auto;
 }
+/* RESET SUAVE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FUENTE PERSONALIZADA */
+@font-face {
+  font-family: "AppleGaramondLight-Italic" !important;
+  src: url("fonts/AppleGaramondLight-Italic.woff2") format("woff2");
+}
+
+body {
+  font-family: "AppleGaramondLight-Italic" !important;
+  background-color: #ffffff;
+  color: #0c08f3 !important;
+}
+
+/* SECCIONES */
+.section {
+  min-height: 10vh;
+  display:block;
+  align-items: center;
+}
+
+/* TITULOS GRANDES */
+h1 {
+  font-size: 12rem !important;
+  font-weight: 1400;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+/* OPCIONAL: efecto hover sutil */
+h1:hover {
+  color:chartreuse;
+  cursor: url("img/cursor.png"), auto;
+   font-style: italic;
+  text-decoration: underline;
+}
