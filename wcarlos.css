@@ -1,4 +1,5 @@
 body {
+  padding-top: 8rem;
   cursor: url("img/cursor.png"), auto;
    background-color: #9cceff !important;
 }
