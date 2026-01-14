@@ -1,5 +1,6 @@
 body {
   cursor: url("img/cursor.png"), auto;
+   background-color: #9cceff !important;
 }
 /* RESET SUAVE */
 * {
@@ -16,8 +17,8 @@ body {
 
 body {
   font-family: "AppleGaramondLight-Italic" !important;
-  background-color: #ffffff;
-  color: #0c08f3 !important;
+ 
+  color: #fe0000 !important;
 }
 
 /* SECCIONES */
@@ -29,7 +30,7 @@ body {
 
 /* TITULOS GRANDES */
 h1 {
-  font-size: 12rem !important;
+  font-size:  clamp(4rem, 12vw, 12rem) !important;
   font-weight: 1400;
   letter-spacing: -0.02em;
   line-height: 0.9;
@@ -37,8 +38,14 @@ h1 {
 
 /* OPCIONAL: efecto hover sutil */
 h1:hover {
-  color:chartreuse;
+  color:rgb(0, 0, 0);
   cursor: url("img/cursor.png"), auto;
    font-style: italic;
   text-decoration: underline;
+}
+
+.section-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
 }
