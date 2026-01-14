@@ -9,6 +9,34 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  width: clamp(120px, 12vw, 200px);
+  height: auto;
+  display: block;
+  position: fixed;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.logo:hover{
+   color:rgb(0, 0, 0);
+  cursor: url("img/cursor2.png"), auto;
+}
+ 
 /* FUENTE PERSONALIZADA */
 @font-face {
   font-family: "AppleGaramondLight-Italic" !important;
@@ -39,7 +67,7 @@ h1 {
 /* OPCIONAL: efecto hover sutil */
 h1:hover {
   color:rgb(0, 0, 0);
-  cursor: url("img/cursor.png"), auto;
+  cursor: url("img/cursor2.png"), auto;
    font-style: italic;
   text-decoration: underline;
 }
@@ -49,3 +77,16 @@ h1:hover {
   color: inherit;
   display: inline-block;
 }
+
+.photo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem; /* separación vertical */
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
