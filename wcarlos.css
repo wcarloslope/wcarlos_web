@@ -91,3 +91,40 @@ h1:hover {
   object-fit: cover;
 }
 
+.photo-container {
+  position: relative;        /* contenedor relativo para colocar el texto */
+  margin-bottom: 6rem;       /* espacio entre bloques de fotos */
+}
+
+.photo {
+  width: clamp(200px, 40vw, 400px); /* tamaño responsive */
+  height: auto;
+  display: block;
+  margin: 0 auto;                  /* centra la foto horizontalmente */
+}
+
+.side-text {
+  position: absolute;       /* colocamos el texto “flotando” */
+  top: 0;                   /* empieza a la altura de la foto */
+  right: 2rem;              /* margen desde el borde derecho */
+  max-width: 300px;         /* ancho máximo para que sea legible */
+}
+
+.side-text p {
+  font-family:'Courier New', Courier, monospace, sans-serif;
+  font-size: clamp(0.8rem, 1vw, 1rem); /* pequeña pero legible */
+  line-height: 1.4;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .side-text {
+    position: static;       /* se coloca debajo de la foto */
+    max-width: 90%;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+  }
+
+  .photo {
+    width: 90%;
+  }
+}
