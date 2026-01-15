@@ -3,7 +3,7 @@ body {
   cursor: url("img/cursor.png"), auto;
    background-color: #9cceff !important;
 }
-/* RESET SUAVE */
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ html {
   cursor: url("img/cursor2.png"), auto;
 }
  
-/* FUENTE PERSONALIZADA */
+
 @font-face {
   font-family: "AppleGaramondLight-Italic" !important;
   src: url("fonts/AppleGaramondLight-Italic.woff2") format("woff2");
@@ -50,14 +50,12 @@ body {
   color: #fe0000 !important;
 }
 
-/* SECCIONES */
 .section {
   min-height: 10vh;
   display:block;
   align-items: center;
 }
 
-/* TITULOS GRANDES */
 h1 {
   font-size:  clamp(4rem, 12vw, 12rem) !important;
   font-weight: 1400;
@@ -65,7 +63,6 @@ h1 {
   line-height: 0.9;
 }
 
-/* OPCIONAL: efecto hover sutil */
 h1:hover {
   color:rgb(0, 0, 0);
   cursor: url("img/cursor2.png"), auto;
@@ -82,7 +79,7 @@ h1:hover {
 .photo-column {
   display: flex;
   flex-direction: column;
-  gap: 8rem; /* separación vertical */
+  gap: 8rem; 
   font-size: 2rem;
 }
 
@@ -93,15 +90,15 @@ h1:hover {
 }
 
 .photo-container {
-  position: relative;        /* contenedor relativo para colocar el texto */
-  margin-bottom: 6rem;       /* espacio entre bloques de fotos */
+  position: relative;        
+  margin-bottom: 6rem;       
 }
 
 .photo {
-  width: clamp(200px, 40vw, 400px); /* tamaño responsive */
+  width: clamp(200px, 40vw, 400px); 
   height: auto;
   display: block;
-  margin: 0 auto;                  /* centra la foto horizontalmente */
+  margin: 0 auto;             
 }
 
 
