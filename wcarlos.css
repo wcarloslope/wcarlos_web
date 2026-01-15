@@ -83,6 +83,7 @@ h1:hover {
   display: flex;
   flex-direction: column;
   gap: 8rem; /* separación vertical */
+  font-size: 2rem;
 }
 
 .photo {
@@ -103,13 +104,11 @@ h1:hover {
   margin: 0 auto;                  /* centra la foto horizontalmente */
 }
 
+
 @font-face {
   font-family: "Helvetica-Narrow-Roman" !important;
   src: url("fonts/Helvetica-Narrow-Roman.woff") format("woff");
 }
 
-.about {
-  font-family: "Helvetica-Narrow-Roman" !important;
-  font-size: clamp(2rem, 1vw, 1rem);
-  font-weight: lighter;
-}
+
+
