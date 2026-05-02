@@ -1,7 +1,7 @@
 body {
   padding-top: 8rem;
   cursor: url("img/cursor.png"), auto;
-   background-color: hsl(210, 100%, 86%) !important;
+   background-color: hwb(211 82% 3%) !important;
 }
 
 * {
