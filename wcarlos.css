@@ -1,7 +1,7 @@
 body {
   padding-top: 8rem;
   cursor: url("img/cursor.png"), auto;
-   background-color: #9cceff !important;
+   background-color: hsl(210, 100%, 86%) !important;
 }
 
 * {
@@ -94,6 +94,8 @@ h1:hover {
   margin-bottom: 6rem;       
 }
 
+
+
 .photo {
   width: clamp(200px, 40vw, 400px); 
   height: auto;
@@ -107,21 +109,4 @@ h1:hover {
   src: url("fonts/Helvetica-Narrow-Roman.woff") format("woff");
 }
 
-.photo-column {
-  padding: 5px;
-}
-
-/* MÓVIL → columnas ocupan más ancho visual */
-@media (max-width: 768px) {
-  .photo-column {
-    padding: 2px;
-  }
-}
-
-/* ORDENADOR → más aire → imágenes parecen más pequeñas */
-@media (min-width: 992px) {
-  .photo-column {
-    padding: 15px;
-  }
-}
 
